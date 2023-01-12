@@ -4,11 +4,13 @@ void implimentWorstFit(int blockSize[], int blocks, int processSize[], int proce
 {
     int allocation[processes];
     int occupied[blocks];
-    for(int i = 0; i < processes; i++){
+    for(int i = 0; i < processes; i++)
+	{
         allocation[i] = -1;
     }
     
-    for(int i = 0; i < blocks; i++){
+    for(int i = 0; i < blocks; i++)
+	{
         occupied[i] = 0;
     }
     for (int i=0; i < processes; i++)
